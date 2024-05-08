@@ -25,6 +25,9 @@ public class Propiedad{
     public int IdCliente{ get; set; }
     public Cliente Cliente{ get; set; }
     public bool Disponible { get; set; }
+    [ForeignKey("AgenteInmobiliario")]
+    public int IdAgenteInmobiliario{ get; set; }
+    public AgenteInmobiliario AgenteInmobiliario{ get; set; }
 
     public Propiedad(){
         MetrosCuadrados = 0;
@@ -34,6 +37,7 @@ public class Propiedad{
         NumParqueaderos = 0;
         Disponible = true;
         Cliente = new Cliente();
+        AgenteInmobiliario = new AgenteInmobiliario();
 
     }
 

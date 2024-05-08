@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgenteInmLandingAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b4bb4177270ad06c95ca1591846d8ecf012210c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+938e9fa1c4430ef2cc24d25aa23711b86b0e516e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgenteInmLandingAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgenteInmLandingAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
