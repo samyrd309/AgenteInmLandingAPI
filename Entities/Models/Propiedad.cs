@@ -1,6 +1,6 @@
 global using System.ComponentModel.DataAnnotations;
 global using System.ComponentModel.DataAnnotations.Schema;
-global using Entities.Models;
+using Entities.Models;
 
 namespace Entities.Models
 {

@@ -1,4 +1,5 @@
 
+using Entities.Models;
 namespace Entities.Models
 {
     [Table("Clientes")]
