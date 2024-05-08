@@ -21,6 +21,9 @@ public class Propiedad{
     public int NumBanos{ get; set; } 
     public int NumParqueaderos{ get; set; } 
     public string? Descripcion{ get; set; }
+    [ForeignKey("Cliente")]
+    public int IdCliente{ get; set; }
+    public Cliente Cliente{ get; set; }
     public bool Disponible { get; set; }
 
     public Propiedad(){
@@ -30,6 +33,7 @@ public class Propiedad{
         NumBanos = 0;
         NumParqueaderos = 0;
         Disponible = true;
+        Cliente = new Cliente();
 
     }
 
