@@ -26,6 +26,7 @@ public class Cliente {
     public bool Estado { get; set; } 
 
     public Cliente(){
+        AgenteInmobiliario = new AgenteInmobiliario();
         Propiedades = new List<Propiedad>();
         Estado = true;
     }
