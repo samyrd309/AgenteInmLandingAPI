@@ -19,11 +19,11 @@ public class Cliente {
     [Display(Name = "Teléfono")]
     public string? Telefono { get; set; }
     [Column("PropiedadesDeInteres")]
-    public List<Propiedad> Propiedades { get; set; } 
+    public ICollection<Propiedad> Propiedades { get; set; } 
     public bool Estado { get; set; } 
 
     public Cliente(){
-        Propiedades = new List<Propiedad>();
+        Propiedades = new ICollection<Propiedad>();
         Estado = true;
     }
 
