@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+global using System.ComponentModel.DataAnnotations;
 
 public class Propiedad{
     public int Id { get; set; }

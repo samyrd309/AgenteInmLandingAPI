@@ -23,3 +23,4 @@ C:\Users\samue\Desktop\Playground\Portafolio personal projects\AgenteInmobiliari
 C:\Users\samue\Desktop\Playground\Portafolio personal projects\AgenteInmobiliarioLanding\AgenteInmLandingAPI\obj\Debug\net8.0\AgenteInmLandingAPI.pdb
 C:\Users\samue\Desktop\Playground\Portafolio personal projects\AgenteInmobiliarioLanding\AgenteInmLandingAPI\obj\Debug\net8.0\AgenteInmLandingAPI.genruntimeconfig.cache
 C:\Users\samue\Desktop\Playground\Portafolio personal projects\AgenteInmobiliarioLanding\AgenteInmLandingAPI\obj\Debug\net8.0\ref\AgenteInmLandingAPI.dll
+C:\Users\samue\Desktop\Playground\Portafolio personal projects\AgenteInmobiliarioLanding\AgenteInmLandingAPI\obj\Debug\net8.0\AgenteInmLandingAPI.sourcelink.json
