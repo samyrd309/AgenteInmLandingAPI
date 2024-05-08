@@ -1,4 +1,5 @@
-using Entities.Models; 
+using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 namespace Entities
 {
     public class RepositoryContext : DbContext
@@ -6,10 +7,10 @@ namespace Entities
         public RepositoryContext(DbContextOptions options) : base(options) { }
         public DbSet<TipoPropiedad> TipoPropiedades { get; set; }
         public DbSet<Propiedad> Propiedades { get; set; }
-        public DbSet<Propietario> Propietarios { get; set; }
-        public DbSet<Inquilino> Inquilinos { get; set; }
-        public DbSet<Contrato> Contratos { get; set; }
-        public DbSet<Pago> Pagos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        
+        public DbSet<AgenteInmobiliario> AgentesInmobiliarios { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Visita> Visitas { get; set; }
+
     }
 }
