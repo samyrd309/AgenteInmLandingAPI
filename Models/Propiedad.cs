@@ -28,6 +28,9 @@ public class Propiedad{
     [ForeignKey("AgenteInmobiliario")]
     public int IdAgenteInmobiliario{ get; set; }
     public AgenteInmobiliario AgenteInmobiliario{ get; set; }
+    [ForeignKey("TipoPropiedad")]
+    public int IdTipoPropiedad{ get; set; }
+    public TipoPropiedad TipoPropiedad{ get; set; }
 
     public Propiedad(){
         MetrosCuadrados = 0;
@@ -38,6 +41,7 @@ public class Propiedad{
         Disponible = true;
         Cliente = new Cliente();
         AgenteInmobiliario = new AgenteInmobiliario();
+        TipoPropiedad = new TipoPropiedad();
 
     }
 
