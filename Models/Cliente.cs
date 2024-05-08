@@ -20,6 +20,9 @@ public class Cliente {
     public string? Telefono { get; set; }
     [Column("PropiedadesDeInteres")]
     public ICollection<Propiedad> Propiedades { get; set; } 
+    [ForeignKey("AgenteInmobiliario")]
+    public int IdAgenteInmobiliario { get; set; }
+    public AgenteInmobiliario AgenteInmobiliario { get; set; }
     public bool Estado { get; set; } 
 
     public Cliente(){

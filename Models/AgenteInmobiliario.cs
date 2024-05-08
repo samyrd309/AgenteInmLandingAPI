@@ -19,10 +19,12 @@ public class AgenteInmobiliario {
     public string? Telefono { get; set; }
 
     public ICollection<Propiedad> Propiedades { get; set; }
+    public ICollection<Cliente> Clientes { get; set; }
     public DateTime FechaContratacion { get; set; }
 
     public AgenteInmobiliario(){
         Propiedades = new List<Propiedad>();
+        Clientes = new List<Cliente>();
         FechaContratacion = DateTime.Now;
     }
 
