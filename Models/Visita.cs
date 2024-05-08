@@ -1,24 +1,28 @@
+[Table("Visitas")]
 public class Visita
 {
+    [Key]
+    [Column("IdVisita")]
     public int Id { get; set; }
+    [Required]
     public DateTime FechaHora { get; set; }
-
+    [Required]
     // Clave foránea para AgenteInmobiliario
-    [ForeignKey("AgenteInmobiliario")]
+    [ForeignKey(nameof(AgenteInmobiliario))]
     public int AgenteInmobiliarioId { get; set; }
-
+    [Required]
     // Propiedad de navegación para AgenteInmobiliario
     public AgenteInmobiliario AgenteInmobiliario { get; set; }
-
+    [Required]
     // Clave foránea para Cliente
-    [ForeignKey("Cliente")]
+    [ForeignKey(nameof(Cliente))]
     public int ClienteId { get; set; }
-
+    [Required]
     // Propiedad de navegación para Cliente
     public Cliente Cliente { get; set; }
 
     // Clave foránea para Propiedad
-    [ForeignKey("Propiedad")]
+    [ForeignKey(nameof(Propiedad))]
     public int PropiedadId { get; set; }
 
     // Propiedad de navegación para Propiedad

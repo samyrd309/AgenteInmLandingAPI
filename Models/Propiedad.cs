@@ -21,14 +21,17 @@ public class Propiedad{
     public int NumBanos{ get; set; } 
     public int NumParqueaderos{ get; set; } 
     public string? Descripcion{ get; set; }
-    [ForeignKey("Cliente")]
+    public bool Disponible { get; set; }
+    // Claves foraneas Clientes
+    [ForeignKey(nameof(Cliente))]
     public int IdCliente{ get; set; }
     public Cliente Cliente{ get; set; }
-    public bool Disponible { get; set; }
-    [ForeignKey("AgenteInmobiliario")]
+    // Claes foraneas AgenteInmobiliario
+    [ForeignKey(nameof(AgenteInmobiliario))]
     public int IdAgenteInmobiliario{ get; set; }
     public AgenteInmobiliario AgenteInmobiliario{ get; set; }
-    [ForeignKey("TipoPropiedad")]
+    // Claves foraneas TipoPropiedad
+    [ForeignKey(nameof(TipoPropiedad))]
     public int IdTipoPropiedad{ get; set; }
     public ICollection<Visita> Visitas { get; set; }
     public TipoPropiedad TipoPropiedad{ get; set; }

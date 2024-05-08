@@ -1,4 +1,7 @@
+[Table("TipoPropiedades")]
 public class TipoPropiedad {
+    [Key]
+    [Column("IdTipoPropiedad")]
     public int Id { get; set; }
     [Required]
     public string? Nombre { get; set; }
