@@ -23,7 +23,7 @@ public class Cliente {
     public bool Estado { get; set; } 
 
     public Cliente(){
-        Propiedades = new ICollection<Propiedad>();
+        Propiedades = new List<Propiedad>();
         Estado = true;
     }
 
