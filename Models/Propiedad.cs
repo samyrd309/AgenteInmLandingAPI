@@ -30,6 +30,7 @@ public class Propiedad{
     public AgenteInmobiliario AgenteInmobiliario{ get; set; }
     [ForeignKey("TipoPropiedad")]
     public int IdTipoPropiedad{ get; set; }
+    public ICollection<Visita> Visitas { get; set; }
     public TipoPropiedad TipoPropiedad{ get; set; }
 
     public Propiedad(){
@@ -42,6 +43,7 @@ public class Propiedad{
         Cliente = new Cliente();
         AgenteInmobiliario = new AgenteInmobiliario();
         TipoPropiedad = new TipoPropiedad();
+        Visitas = new List<Visita>();
 
     }
 
