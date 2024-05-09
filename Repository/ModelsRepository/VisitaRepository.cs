@@ -3,7 +3,7 @@ using Contracts.InterfaceRepository;
 using Entities;
 
 namespace Repository.ModelsRepository{
-    public class VisitaRepository : RepositoryBase<Visita>, IVistasRepository
+    public class VisitaRepository : RepositoryBase<Visita>, IVisitaRepository
     {
         public VisitaRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
