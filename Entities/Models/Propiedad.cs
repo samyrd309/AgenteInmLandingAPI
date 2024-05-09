@@ -26,11 +26,11 @@ namespace Entities.Models
         public string? Descripcion { get; set; }
         public bool Disponible { get; set; }
         // Claves foraneas Clientes
-        [ForeignKey(nameof(Cliente))]
+        [ForeignKey("Cliente")]
         public int IdCliente { get; set; }
         public Cliente Cliente { get; set; }
         // Claes foraneas AgenteInmobiliario
-        [ForeignKey(nameof(AgenteInmobiliario))]
+        [ForeignKey("AgenteInmobiliario")]
         public int IdAgenteInmobiliario { get; set; }
         public AgenteInmobiliario AgenteInmobiliario { get; set; }
         // Claves foraneas TipoPropiedad
