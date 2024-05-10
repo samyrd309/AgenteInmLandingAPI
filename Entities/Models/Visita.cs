@@ -8,6 +8,7 @@ namespace Entities.Models
         public int Id { get; set; }
         [Required]
         public DateTime FechaHora { get; set; }
+        /*
         [Required]
         // Clave foránea para AgenteInmobiliario
         [ForeignKey(nameof(AgenteInmobiliario))]
@@ -17,10 +18,9 @@ namespace Entities.Models
         public AgenteInmobiliario AgenteInmobiliario { get; set; }
         [Required]
         // Clave foránea para Cliente
-        [ForeignKey(nameof(Cliente))]
+        [ForeignKey("ClienteId")]
         public int ClienteId { get; set; }
         [Required]
-        // Propiedad de navegación para Cliente
         public Cliente Cliente { get; set; }
 
         // Clave foránea para Propiedad
@@ -29,13 +29,16 @@ namespace Entities.Models
 
         // Propiedad de navegación para Propiedad
         public Propiedad Propiedad { get; set; }
+        */
 
         public Visita()
         {
             FechaHora = DateTime.Now;
+            /*
             AgenteInmobiliario = new AgenteInmobiliario();
             Cliente = new Cliente();
             Propiedad = new Propiedad();
+            */
         }
     }
 }

@@ -20,18 +20,21 @@ namespace Entities.Models
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Teléfono")]
         public string? Telefono { get; set; }
-
+/*
         public ICollection<Propiedad> Propiedades { get; set; }
         public ICollection<Cliente> Clientes { get; set; }
         public ICollection<Visita> Visitas { get; set; }
-        public DateTime FechaContratacion { get; set; }
+        */
+        public DateTime FechaCreacion { get; set; }
 
         public AgenteInmobiliario()
         {
+            /*
             Propiedades = new List<Propiedad>();
             Clientes = new List<Cliente>();
             Visitas = new List<Visita>();
-            FechaContratacion = DateTime.Now;
+            */
+            FechaCreacion = DateTime.Now;
         }
 
     }

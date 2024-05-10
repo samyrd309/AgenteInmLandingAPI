@@ -21,19 +21,22 @@ namespace Entities.Models
         [Display(Name = "Teléfono")]
         public string? Telefono { get; set; }
         [Column("PropiedadesDeInteres")]
+        /*
         public ICollection<Propiedad> Propiedades { get; set; }
         [ForeignKey("AgenteInmobiliario")]
         public int IdAgenteInmobiliario { get; set; }
-        [ForeignKey("Visitas")]
         public ICollection<Visita> Visitas { get; set; }
         public AgenteInmobiliario AgenteInmobiliario { get; set; }
+        */
         public bool Estado { get; set; }
 
         public Cliente()
         {
+            /*
             AgenteInmobiliario = new AgenteInmobiliario();
             Propiedades = new List<Propiedad>();
             Visitas = new List<Visita>();
+            */
             Estado = true;
         }
 
