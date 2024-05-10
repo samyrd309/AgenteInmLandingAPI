@@ -8,6 +8,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureMySqlContext(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.ConfigureRepositoryWrapper();
 
 builder.Services.AddEndpoints(Assembly.GetExecutingAssembly());
 
@@ -27,7 +28,5 @@ if(app.Environment.IsDevelopment()) {
 
 app.UseHttpsRedirection();
 
-
-//app.ConfigureEndpoints();
 
 app.Run();
