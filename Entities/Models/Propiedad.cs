@@ -1,6 +1,6 @@
 global using System.ComponentModel.DataAnnotations;
 global using System.ComponentModel.DataAnnotations.Schema;
-using Entities.Models;
+using System.Text.Json.Serialization;
 
 namespace Entities.Models
 {
@@ -26,20 +26,28 @@ namespace Entities.Models
         public int NumParqueaderos { get; set; }
         public string? Descripcion { get; set; }
         public bool Disponible { get; set; }
+        /*
         // Claves foraneas Clientes
-        [ForeignKey(nameof(Cliente))]
+        [ForeignKey("Cliente")]
+        [JsonIgnore]
         public int IdCliente { get; set; }
-        public Cliente Cliente { get; set; }
+        [JsonIgnore]
+        public Cliente ? Cliente { get; set; }
         // Claes foraneas AgenteInmobiliario
-        [ForeignKey(nameof(AgenteInmobiliario))]
+        [ForeignKey("AgenteInmobiliario")]
+        [JsonIgnore]
         public int IdAgenteInmobiliario { get; set; }
-        public AgenteInmobiliario AgenteInmobiliario { get; set; }
+        [JsonIgnore]
+        public AgenteInmobiliario ? AgenteInmobiliario { get; set; }
         // Claves foraneas TipoPropiedad
         [ForeignKey(nameof(TipoPropiedad))]
+        [JsonIgnore]
         public int IdTipoPropiedad { get; set; }
+        [JsonIgnore]
+        public TipoPropiedad ? TipoPropiedad { get; set; }
+        
         public ICollection<Visita> Visitas { get; set; }
-        public TipoPropiedad TipoPropiedad { get; set; }
-
+        */
         public Propiedad()
         {
             MetrosCuadrados = 0;
@@ -48,10 +56,12 @@ namespace Entities.Models
             NumBanos = 0;
             NumParqueaderos = 0;
             Disponible = true;
+            /*
             Cliente = new Cliente();
             AgenteInmobiliario = new AgenteInmobiliario();
             TipoPropiedad = new TipoPropiedad();
             Visitas = new List<Visita>();
+            */
 
         }
 
