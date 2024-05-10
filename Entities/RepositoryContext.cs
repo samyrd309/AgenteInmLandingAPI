@@ -5,7 +5,7 @@ namespace Entities
 {
     public class RepositoryContext : DbContext
     {
-        public RepositoryContext(DbContextOptions options) : base(options)
+        public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
         {
         }
 
@@ -14,5 +14,6 @@ namespace Entities
         public DbSet<AgenteInmobiliario> AgentesInmobiliarios { get; set; }
         public DbSet<Visita> Visitas { get; set; }
         public DbSet<TipoPropiedad> TiposPropiedades { get; set; }
+
     }
 }
