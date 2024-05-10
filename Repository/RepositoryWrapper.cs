@@ -74,7 +74,7 @@ namespace Repository{
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _repoContext.SaveChanges();
         }
     }
 }
