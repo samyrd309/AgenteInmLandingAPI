@@ -12,8 +12,9 @@ namespace Entities.Models
         public int Id { get; set; }
         [Required]
         public string? Direccion { get; set; }
-        [Required]
+        /*[Required]
         public string? Ciudad { get; set; }
+        */
         [Required]
         public string? Provincia { get; set; }
         [Required]
