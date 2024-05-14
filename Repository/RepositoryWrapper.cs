@@ -11,6 +11,7 @@ namespace Repository{
         private IPropiedadRepository _propiedad;
         private IVisitaRepository _visita;
         private ITipoPropiedadRepository _tipoPropiedad;
+        private ICiudadRepository _ciudad;
 
         public IPropiedadRepository Propiedad {
             get {
@@ -63,6 +64,16 @@ namespace Repository{
             }
         }
 
+        public ICiudadRepository Ciudad{
+            get{
+                if (_ciudad == null)
+                {
+                    _ciudad = new CiudadRepository(_repoContext);
+                }
+                return _ciudad;
+            }
+        }
+
         public RepositoryWrapper(RepositoryContext repositoryContext){
             _repoContext = repositoryContext;
             _agenteInmobiliario = new AgenteInmobiliarioRepository(_repoContext);
@@ -70,6 +81,7 @@ namespace Repository{
             _propiedad = new PropiedadRepository(_repoContext);
             _visita = new VisitaRepository(_repoContext);
             _tipoPropiedad = new TipoPropiedadRepository(_repoContext);
+            _ciudad = new CiudadRepository(_repoContext);
         }
 
         public void Save()
