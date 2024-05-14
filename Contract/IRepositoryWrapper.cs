@@ -8,6 +8,7 @@ namespace Contracts{
         IClienteRepository Cliente { get; }
         IVisitaRepository Visita { get; } 
         ITipoPropiedadRepository TipoPropiedad { get; }
+        ICiudadRepository Ciudad { get; }
         void Save();
     }
 }
